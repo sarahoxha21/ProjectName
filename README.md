@@ -16,7 +16,7 @@ GitHub Submission Template: Group Division (Phase I) # Team Information
 
 ## Project Title: Online Grocery Shop Platform
 ## Need Analysis: 
-Based on the research we conducted online we gathered some data that displays the current and future trends in the grocery delivery market in Albania. This data shows the market's growth potential. Here are some key takeaways:
+Based on the research we conducted online we gathered some data that displays the current and future trends in the grocery delivery market in Albania. This data shows the market's growth potential. 
 1. The projected revenue in the Grocery Delivery market in Albania is expected to reach US$52.16 million in 2024. This shows a market opportunity for online grocery delivery services in the country.
 2. The market is expected to demonstrate an annual growth rate (CAGR 2024-2028) of 17.70%, resulting in a projected market volume of US$100.10 million by 2028. This suggests a growing demand for grocery delivery services among Albanian consumers.
 3. Albania's grocery delivery market is experiencing a rise in demand as consumers increasingly prioritize convenience and safety. [1]
