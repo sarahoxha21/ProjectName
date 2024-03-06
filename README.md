@@ -1,4 +1,4 @@
-# SE_Project_Phase1_Team5
+# SE_Project_Phase1_Team1
 GitHub Submission Template: Group Division (Phase I) # Team Information
 ## Team Name: GroAppCreators
 
