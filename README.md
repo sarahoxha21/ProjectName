@@ -92,6 +92,8 @@ User Requirements and Application Specifications
 
 # Chosen Development Model
 
+We've chosen the Agile development model because it allows us to adapt to changes quickly. Its iterative approach means we can break the project into smaller parts, continuously gather feedback, and adjust accordingly. This flexibility ensures that we stay aligned with evolving requirements. Agile promotes collaboration and communication within the team, fostering innovation and driving project success. Overall, Agile's adaptability and focus on iterative development make it the ideal choice for our dynamic grocery shopping application project.
+
 # User Requirements
 **Stakeholder**
 1. End-users
@@ -261,4 +263,5 @@ Authentication: Secure hashing of passwords that will be inputted by users.
 
 Data privacy: We will comply with GDPR regulations for data transparency.
 
-
+# Deadline
+Submission Deadline: 18.04.2024, 23:59 hours.
