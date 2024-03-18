@@ -104,16 +104,21 @@ The development team is responsible for designing, building, and maintaining the
  Delivery personnel are responsible for delivering orders to customers' doorsteps. Their role is crucial in ensuring that orders are delivered accurately and on time, contributing to a positive customer experience. Delivery personnel's interests revolve around optimizing delivery routes and providing excellent customer service during delivery.
 5. Customer Support Representatives
 Customer support representatives assist users with any issues or inquiries they may have while using the application. Their role is to provide timely and helpful assistance, resolve any issues, and address user concerns to maintain customer satisfaction. Customer support representatives play a vital role in ensuring a positive user experience and addressing any challenges or feedback raised by users.
+
 **User Stories**
+
 1-User Type: End-user
 Requirement: As an end-user, I want to easily search for products using keywords or categories so that I can find what I need quickly.
 Benefit: This feature allows users to easily find desired items without any inconvenience, thereby optimizing their time spent on the platform.
+
 2-User Type: End-user
 Requirement: As an end-user, I want to receive personalized recommendations based on my past purchases and preferences so that I can discover new products I might like.
 Benefit: Personalized recommendations enhance the shopping experience, making it more convenient and enjoyable for users while encouraging them to explore new products.
+
 3-User Type: Administrator
 Requirement: As an administrator, I want to have access to real-time inventory updates to monitor stock levels and ensure product availability.
 Benefit: Real-time inventory updates help administrators manage inventory efficiently, reducing the risk of stockouts and improving customer satisfaction.
+
 4-User Type: End-user
 Requirement: As an end-user, I want to have the option to schedule convenient delivery times for my purchases so that I can receive them at my preferred time.
 Benefit: Flexible delivery scheduling accommodates users' varying schedules and preferences, increasing satisfaction with the service.
@@ -204,13 +209,18 @@ This table stores payment details for orders, including the payment amount, card
 - User Table:
 Attributes: userid (Primary Key), name, mobile, email, password
 Stores information about registered users, including their name, contact details, email, and password.
+
 **Relationships:**
+
 *Cart-Items Relationship(Many-to-many):*
 The Cart table has a foreign key (item_id) referencing the Items table. Each item in the Items table can be linked with multiple carts (many), as it can be added to carts by multiple users. Each cart in the Cart table can contain multiple items (many). This results in a many-to-many relationship between the Cart and Items tables.
+
 *Payment-User Relationship(One-to-many):*
 The Payment table has a foreign key (userid) referencing the User table, linking payment records to specific users. Each payment record in the Payment table is linked with one user (one). However, each user can have multiple payment records (many), as users can make multiple transactions. Therefore, this relationship is one-to-many.
+
 *Cart-User Relationship(One-to-many):*
 Each user can have multiple carts (many), as users can add items to their cart multiple times or have multiple active carts. However, each cart is linked with only one user (one), as carts belong to individual users. 
+
 **Constraints:**
 - Primary Keys:
 Each table has a primary key constraint defined, ensuring that each record is uniquely identifiable.
@@ -221,23 +231,34 @@ Auto-Increment:
 Some tables have auto-incremented primary keys, ensuring that unique identifiers are automatically assigned to new records.
 
 **Technologies Used**
-*Frontend*
+- *Frontend*
+
 HTML: will be used to create the structure of the webpage
+
 CSS: will be used to style and design the layout of the webpages
+
 Bootstrap: frontend framework
+
 JavaScript: to add interactivity between web pages
+
 jQuery: library of JavaScript
 
-*Backend*
+- *Backend*
+
 PHP: logic of website and will be used to make the connection between the database
+
 MySQL: used to store all data
 
-*Other*
+- *Other*
+
 Github: used to track changes and increase collaboration between team members
 
 **User Interface Design:**
 
 **Security Measures:**
 
+Authentication: Secure hashing of passwords that will be inputted by users.
+
+Data privacy: We will comply with GDPR regulations for data transparency.
 
 
