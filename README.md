@@ -87,3 +87,157 @@ Submission Deadline: 20.03.2023, 23:59 hours.
 # Additional Notes
 Reference-  [1] “Grocery Delivery - Albania: Statista market forecast,” Statista, https://www.statista.com/outlook/dmo/online-food-delivery/grocery-delivery/albania 
 
+# Phase 2
+User Requirements and Application Specifications 
+
+# Chosen Development Model
+
+# User Requirements
+**Stakeholder**
+1. End-users
+These are the individuals who will use our application to browse and purchase groceries online. Their role is crucial as they provide feedback on the usability, functionality, and features of the application. Their interests lie in having a user-friendly interface, access to a wide range of products, convenient payment options, and efficient delivery services. End-users' satisfaction directly impacts the success of the application.
+2. Clients
+ The clients are the owners of the grocery shop for which we are developing the application. Their primary interest is in increasing sales and customer satisfaction. They expect the application to streamline the shopping process, improve inventory management, and provide valuable insights into customer behavior and preferences.
+3. Developers
+The development team is responsible for designing, building, and maintaining the application. Their role involves translating the requirements provided by clients and end-users into functional features and ensuring that the application is reliable, scalable, and easy to maintain. Developers' interests lie in delivering a high-quality product that meets stakeholders' expectations while adhering to project timelines and budget constraints.
+4. Delivery Personnel
+ Delivery personnel are responsible for delivering orders to customers' doorsteps. Their role is crucial in ensuring that orders are delivered accurately and on time, contributing to a positive customer experience. Delivery personnel's interests revolve around optimizing delivery routes and providing excellent customer service during delivery.
+5. Customer Support Representatives
+Customer support representatives assist users with any issues or inquiries they may have while using the application. Their role is to provide timely and helpful assistance, resolve any issues, and address user concerns to maintain customer satisfaction. Customer support representatives play a vital role in ensuring a positive user experience and addressing any challenges or feedback raised by users.
+**User Stories**
+1-User Type: End-user
+Requirement: As an end-user, I want to easily search for products using keywords or categories so that I can find what I need quickly.
+Benefit: This feature allows users to easily find desired items without any inconvenience, thereby optimizing their time spent on the platform.
+2-User Type: End-user
+Requirement: As an end-user, I want to receive personalized recommendations based on my past purchases and preferences so that I can discover new products I might like.
+Benefit: Personalized recommendations enhance the shopping experience, making it more convenient and enjoyable for users while encouraging them to explore new products.
+3-User Type: Administrator
+Requirement: As an administrator, I want to have access to real-time inventory updates to monitor stock levels and ensure product availability.
+Benefit: Real-time inventory updates help administrators manage inventory efficiently, reducing the risk of stockouts and improving customer satisfaction.
+4-User Type: End-user
+Requirement: As an end-user, I want to have the option to schedule convenient delivery times for my purchases so that I can receive them at my preferred time.
+Benefit: Flexible delivery scheduling accommodates users' varying schedules and preferences, increasing satisfaction with the service.
+
+# Functional Requirements
+- **User Registration and Authentication:**
+Users should be able to register for an account using email or phone number.
+Authentication mechanisms, including email verification and password protection, should be implemented to secure user accounts.
+- **Product Browsing and Selection:**
+The platform should display a wide variety of grocery products categorized into sections (e.g., fresh produce, dairy, household essentials).
+Users should be able to browse products, view detailed descriptions, and add items to their shopping cart.
+- **Shopping Cart Management:**
+Users should have access to a shopping cart where they can review selected items, update quantities, and remove products if needed.
+The shopping cart should display the total price, including any applicable taxes or fees.
+- **Order Placement and Checkout:**
+Users should be able to proceed to checkout from the shopping cart, where they can review their selected items and provide delivery information.
+During checkout, users should be prompted to select their preferred delivery date and time slot.
+Payment options should include In-Person Payment and Debit/Credit Card Payment, with secure transaction processing.
+- **User Account Management:**
+Users should have access to a profile dashboard where they can view order history, manage delivery addresses, and update account information.
+Account settings should allow users to modify their communication preferences and password.
+- **Real-Time Inventory Management:**
+The platform should maintain real-time inventory updates to ensure accurate product availability information.
+Products that are out of stock should be clearly labeled, and users should not be able to add them to their cart.
+- **Delivery Management:**
+Admins should have access to a delivery management system where they can assign delivery drivers, track orders in real-time, and manage delivery schedules.
+Users should receive notifications regarding order status updates, including confirmation, dispatch, and delivery.
+- **Feedback and Review System:**
+Users should have the option to rate and review products they have purchased.
+Admins should be able to moderate reviews and respond to user feedback if necessary.
+- **Search and Filtering Functionality:**
+Users should be able to search for specific products using keywords and filters (e.g., price range, brand).
+Advanced search options, such as sorting by popularity or dietary preferences, should be provided.
+- **Responsive Design and Compatibility:**
+Compatibility with major web browsers (e.g Chrome, Firefox) should be ensured.
+
+# Non-functional Requirements
+-Product requriements
+1. Speed: The website should respond quickly to user activities.
+2. Reliability: The website should be stable and available at all times, with minimal downtime or errors.
+3. Usability: The website should be intuitive and easy to navigate.
+-Organizational Requirements:
+1. Implementation Requirements: The website should be developed using specified technologies which in our case are HTML, CSS, Mysql, PHP.
+-External Requirements:
+1.Compatibility: The website should be compatible with different browsers to ensure accessibility for all end-users.
+2.Legislative Requirements: The website should follow relevant laws and regulations regarding data privacy and security such as the Law No. 9887, "On the Protection of Personal Data", which aligns with the European Union's General Data Protection Regulation (GDPR).
+ **Acceptance Criteria:**
+-Web pages should load within 2 seconds, 
+-Search results should be displayed instantly; users will have the right to select from which category they’re searching a product from and type in the name of the product.
+-Users should be able to find and add items to their cart with minimal effort
+-The checkout process should require no more than three steps to complete an order.
+
+# Application Specifications
+**Design Architecture Diagram**
+Our online grocery shopping platform follows a client-server architecture, with distinct frontend and backend components interacting to provide a seamless user experience. Below is an overview of the system components and their interactions:
+- Client (User Interface):
+The client represents the user interface through which customers interact with the platform.
+It includes the web interface accessible via web browsers.
+- Frontend:
+The frontend component is responsible for enabling the user interface elements and managing user interactions. It uses technologies such as HTML, CSS, and JavaScript to create a visually appealing UI. The frontend communicates with the backend to request data and handle user actions, such as browsing products, adding items to the cart, and placing orders.
+Backend:
+- The backend component serves as the server-side logic responsible for processing requests from the frontend and interacting with the database. It is built using technologies such as PHP for handling business logic. The backend handles managing user accounts, processing orders, and updating inventory.
+- Database:
+The database stores data for the application, including user profiles, product listings, orders, and transaction details. It uses a relational database management system (MySQL) to ensure data integrity and reliability. The backend communicates with the database to retrieve and store information, ensuring secure data management and persistence.
+
+**System Interactions:**
+1. User interactions with the client initiate HTTP requests to the backend API endpoints.
+2. The frontend communicates with the backend to retrieve data, update user sessions etc.
+3.The backend interacts with the database to fetch or update data based on the user's actions and application requirements.
+4. Responses from the backend are sent back to the frontend, where they are processed and used to update the UI accordingly.
+
+**Database Model**
+- Admin Table:
+Attributes: id (Primary Key), name, mobile, email, password, image
+Stores information about admins who have access to the system.
+- Cart Table:
+Attributes: cartid (Primary Key), itemid, userid (Foreign Key)
+This table represents the cart items added by users. Each row corresponds to an item added to the cart by a specific user.
+- Items Table:
+Attributes: itemid (Primary Key), Title, category, item_rating, image, discription, price
+This table contains details of available items for purchase, including their title, category, rating, image, description, and price.
+- Order Table:
+Attributes: id (Primary Key), item_name, price, Quantity, total
+This table stores information about orders, including the ordered item's name, price, quantity, and total cost.
+- Payment Table:
+Attributes: id (Primary Key), cardnumber, card_expairy, cvc_code, amount, userid (Foreign key)
+This table stores payment details for orders, including the payment amount, card information, and associated user.
+- User Table:
+Attributes: userid (Primary Key), name, mobile, email, password
+Stores information about registered users, including their name, contact details, email, and password.
+**Relationships:**
+*Cart-Items Relationship(Many-to-many):*
+The Cart table has a foreign key (item_id) referencing the Items table. Each item in the Items table can be linked with multiple carts (many), as it can be added to carts by multiple users. Each cart in the Cart table can contain multiple items (many). This results in a many-to-many relationship between the Cart and Items tables.
+*Payment-User Relationship(One-to-many):*
+The Payment table has a foreign key (userid) referencing the User table, linking payment records to specific users. Each payment record in the Payment table is linked with one user (one). However, each user can have multiple payment records (many), as users can make multiple transactions. Therefore, this relationship is one-to-many.
+*Cart-User Relationship(One-to-many):*
+Each user can have multiple carts (many), as users can add items to their cart multiple times or have multiple active carts. However, each cart is linked with only one user (one), as carts belong to individual users. 
+**Constraints:**
+- Primary Keys:
+Each table has a primary key constraint defined, ensuring that each record is uniquely identifiable.
+- Foreign Keys:
+There are foreign key constraints defined in the Cart, User and Payment tables, linking them to the Items, Cart and User tables, respectively.
+- Other Relevant Details:
+Auto-Increment:
+Some tables have auto-incremented primary keys, ensuring that unique identifiers are automatically assigned to new records.
+
+**Technologies Used**
+*Frontend*
+HTML: will be used to create the structure of the webpage
+CSS: will be used to style and design the layout of the webpages
+Bootstrap: frontend framework
+JavaScript: to add interactivity between web pages
+jQuery: library of JavaScript
+
+*Backend*
+PHP: logic of website and will be used to make the connection between the database
+MySQL: used to store all data
+
+*Other*
+Github: used to track changes and increase collaboration between team members
+
+**User Interface Design:**
+
+**Security Measures:**
+
+
+
