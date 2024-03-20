@@ -264,4 +264,4 @@ Authentication: Secure hashing of passwords that will be inputted by users.
 Data privacy: We will comply with GDPR regulations for data transparency.
 
 # Deadline
-Submission Deadline: 18.04.2024, 23:59 hours.
+Submission Deadline: 18.04.2024, 23:59 hours..
