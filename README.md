@@ -265,3 +265,35 @@ Data privacy: We will comply with GDPR regulations for data transparency.
 
 # Deadline
 Submission Deadline: 18.04.2024, 23:59 hours..
+
+# Phase 4 Software Testing
+
+ **Introduction to Testing**
+-Software testing is the methodical process of assessing a system or program to find errors, faults, or any differences between the results that are expected and those that are obtained. It includes a range of strategies and procedures to guarantee that the software satisfies requirements and operates as intended. Software testing is essential to the development process since it enhances the software's functionality, dependability, and quality.
+
+**Purpose of Testing**
+Testing is essential to making sure the platform works well and fulfills the needs of the company and its consumers in the setting of an online grocery store. Why testing is important is as follows:
+
+- *Reliability:* Consumers count on the internet grocery store to deliver precise details about goods, costs, and stock levels. Testing contributes to the platform's increased reliability by assisting in the identification and resolution of problems that may result in inaccurate data or system outages.
+
+- *Correctness:* The website must operate flawlessly, free from bugs or strange behaviours. Testing ensures a flawless user experience by confirming that all features and functionalities operate as intended.
+
+- *Client Satisfaction:* A thoroughly tested website results in happier customers because visitors have less trouble navigating, finding what they're looking for, placing orders, and paying for it. Positive experiences like these promote repeat business and client loyalty.
+
+- *Expense-effectiveness:* Defects found later in the development cycle are more expensive to fix than those found early on, especially if the platform has already been put into production. Testing saves time and resources by assisting in the early detection and correction of issues.
+
+**Goals of Testing**
+There are two goals for testing the online grocery store website:
+Early Defect Identification: The goal of testing is to find bugs or problems in the program at the earliest stage of its development. Through early identification and remediation of these errors, the development team may minimize the likelihood that they will later become more serious issues, therefore lowering the total cost and labor associated with their repair.
+Software Component Verification: Testing makes sure that every part of the website—including the shopping cart, payment gateway, search feature, and product listings—works as it should. It entails verifying that these elements comply to the expected behavior and fulfill the requirements as stated, guaranteeing the overall functioning and quality of the webpage.
+In conclusion, testing is essential if the online grocery store website is to provide consumers with a dependable, easy-to-use, and error-free experience while lowering the risks and expenses related to software flaws.
+
+*We decided to use PHPUnit as a testing framework since our code is written in PHP.*
+
+**Checkout Testing**
+
+-**Component:** We are testing the checkout component of our website.
+-**Importance:** Testing this component is important because it deals with user actions like completing a purchase, handling payment methods, and managing order details.
+
+**Search Testing**
+
